@@ -1,0 +1,7 @@
+opt/freeswitch/conf.examples/lang/de/*.xml
+opt/freeswitch/conf.examples/lang/de/demo/*.xml
+opt/freeswitch/conf.examples/lang/de/vm/*.xml
+usr/lib/freeswitch/modules/mod_say_de.so
+etc/freeswitch/_example/lang/de/*.xml
+etc/freeswitch/_example/lang/de/demo/*.xml
+etc/freeswitch/_example/lang/de/vm/*.xml

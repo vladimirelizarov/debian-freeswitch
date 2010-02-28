@@ -1,0 +1,9 @@
+opt/freeswitch/conf/dialplan
+opt/freeswitch/conf/directory
+opt/freeswitch/conf/autoload_configs
+opt/freeswitch/log
+opt/freeswitch/log/xml_cdr
+opt/freeswitch/db
+opt/freeswitch/bin/scripts
+etc/default
+etc/freeswitch

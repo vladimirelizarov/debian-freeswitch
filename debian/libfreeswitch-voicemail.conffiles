@@ -1,0 +1,3 @@
+/etc/freeswitch/_example/notify-voicemail.tpl
+/etc/freeswitch/_example/voicemail.tpl
+/etc/freeswitch/_example/autoload_configs/voicemail.conf.xml

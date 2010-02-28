@@ -1,0 +1,123 @@
+#!/usr/bin/make -f
+
+# export DH_VERBOSE=1
+export DH_OPTIONS
+export DH_COMPAT=4
+export DEB_DH_INSTALL_SOURCEDIR=debian/tmp
+
+ifndef AUTOCONF
+	AUTOCONFS := $(wildcard /usr/bin/autoconf*)
+	AUTOCONF = $(shell which autoconf)
+ifneq (,$(findstring 2.50,${AUTOCONFS}))
+	AUTOCONF = /usr/bin/autoconf2.50
+endif
+endif
+
+# These are used for cross-compiling and for saving the configure script
+# from having to guess our platform (since we know it already)
+DEB_HOST_GNU_TYPE   ?= $(shell dpkg-architecture -qDEB_HOST_GNU_TYPE)
+DEB_BUILD_GNU_TYPE  ?= $(shell dpkg-architecture -qDEB_BUILD_GNU_TYPE)
+
+CFLAGS = -ggdb
+
+FEATURES = --enable-core-libedit-support --enable-core-odbc-support --with-libcurl --with-openssl
+ifneq (,$(findstring noopt,$(DEB_BUILD_OPTIONS)))
+	FEATURES += --disable-optimization
+endif
+
+main: binary
+
+configure: freeswitch/config.status
+freeswitch/config.status: freeswitch/Makefile.in
+	dh_testdir
+	dh_quilt_patch
+	cd freeswitch && mv modules.conf modules.conf~
+	cp {debian,freeswitch}/modules.conf
+	cd freeswitch && ./configure \
+		--prefix=/usr \
+		--bindir=/usr/bin \
+		--sbindir=/usr/sbin \
+		--libdir=/usr/lib/freeswitch \
+		--mandir=/usr/share/man \
+		--sysconfdir=/etc/freeswitch \
+		--datadir=/usr/share/freeswitch \
+		--includedir=/usr/include/freeswitch \
+		--with-modinstdir=/usr/lib/freeswitch/modules \
+		--with-rundir=/var/run \
+		--with-scriptdir=/usr/share/freeswitch/scripts \
+		--with-grammardir=/var/lib/freeswitch/grammar \
+		--with-recordingsdir=/var/lib/freeswitch/recordings \
+		--with-dbdir=/var/lib/freeswitch/db \
+		--with-logfiledir=/var/log/freeswitch \
+		--with-soundsdir=/usr/share/freeswitch/sounds \
+		--with-htdocsdir=/usr/share/freeswitch/htdocs \
+		--host=$(DEB_HOST_GNU_TYPE) --build=$(DEB_BUILD_GNU_TYPE) ${FEATURES}
+
+freeswitch/Makefile.in: freeswitch/bootstrap.sh
+	dh_testdir
+	dh_quilt_patch
+	cd freeswitch && AUTOCONF=${AUTOCONF} ./bootstrap.sh
+
+build: freeswitch/build-stamp
+freeswitch/build-stamp: configure
+	dh_testdir
+	cd freeswitch && $(MAKE)
+	touch $@
+
+clean:
+	dh_testdir
+	dh_quilt_unpatch
+	dh_testroot
+	rm -f freeswitch/build-stamp 
+	-cd freeswitch && $(MAKE) update-clean
+	-cd freeswitch && rm -f config.status */*/config.status */*/*/config.status
+	-cd freeswitch && mv -f modules.conf~ modules.conf
+	dh_clean
+
+install: build
+	dh_testdir
+	dh_testroot
+	dh_clean
+	dh_prep
+	dh_installdirs -A --sourcedir=debian/tmp
+	cd freeswitch && $(MAKE) DESTDIR=$(CURDIR)/debian/tmp install
+	mv $(CURDIR)/debian/tmp/etc/freeswitch $(CURDIR)/debian/tmp/etc/freeswitch.example
+	mkdir $(CURDIR)/debian/tmp/etc/freeswitch
+	mv $(CURDIR)/debian/tmp/etc/freeswitch.example $(CURDIR)/debian/tmp/etc/freeswitch/_example
+
+binary-indep:
+
+binary-arch: install
+	dh_testdir
+	dh_testroot
+	dh_installdocs --all freeswitch/AUTHORS freeswitch/COPYING freeswitch/ChangeLog
+	dh_installexamples
+	dh_installchangelogs
+	dh_installinit --sourcedir=debian/tmp
+	dh_install --fail-missing --sourcedir=debian/tmp \
+		--exclude=usr/perl/freeswitch \
+		--exclude=usr/lib/freeswitch/modules/mod_opal.so \
+		--exclude=etc/freeswitch/_example/autoload_configs/opal.conf.xml
+	dh_link
+	dh_strip
+	dh_compress
+	dh_fixperms
+	dh_installdeb
+	dh_makeshlibs
+	dh_shlibdeps
+	dh_gencontrol
+	dh_md5sums
+	dh_builddeb
+
+binary: binary-indep binary-arch
+
+get-orig-source: freeswitch freeswitch/libs/celt-0.7.1 freeswitch/libs/libbv16-0.1 freeswitch/libs/libbv32-0.1 freeswitch/libs/libmemcached-0.32 freeswitch/libs/libshout-2.2.2 freeswitch/libs/mpg123 freeswitch/libs/lame-3.97
+
+freeswitch:
+	svn co --revision {20100227T0400Z} http://svn.freeswitch.org/svn/freeswitch/trunk freeswitch
+
+freeswitch/libs/%:
+	wget -qO- http://files.freeswitch.org/downloads/libs/$(subst freeswitch/libs/,,$@).tar.gz | tar xzC freeswitch/libs
+
+
+.PHONY: build clean binary-indep binary-arch binary install configure get-orig-source

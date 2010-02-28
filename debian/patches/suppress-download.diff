@@ -1,0 +1,27 @@
+Description: debian source package must contain anything; get error if missing
+Author: <bdi@burnet.ru>
+
+--- a/freeswitch/build/getlib.sh.in	2010-02-25 21:43:21.000000000 +0800
++++ b/freeswitch/build/getlib.sh.in	2010-02-25 21:43:57.000000000 +0800
+@@ -28,7 +28,8 @@
+ 
+     if [ ! -f $tarfile ] ; then
+ 	rm -fr $uncompressed
+-	$DOWNLOAD_CMD $base$tarfile
++	echo $DOWNLOAD_CMD $base$tarfile
++	exit 2
+ 	if [ ! -f $tarfile ] ; then
+ 	    echo cannot find $tarfile
+ 	    exit 1
+--- a/freeswitch/build/getsounds.sh.in	2010-02-25 21:44:41.000000000 +0800
++++ b/freeswitch/build/getsounds.sh.in	2010-02-25 21:45:19.000000000 +0800
+@@ -20,7 +20,8 @@
+ install=$2
+ 
+ if [ ! -f $tarfile ] ; then
+-    $DOWNLOAD_CMD $base$tarfile
++    echo $DOWNLOAD_CMD $base$tarfile
++    exit 2
+     if [ ! -f $tarfile ] ; then
+         echo cannot find $tarfile
+ 	exit 1

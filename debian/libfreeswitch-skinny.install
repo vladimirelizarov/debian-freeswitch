@@ -1,0 +1,2 @@
+usr/lib/freeswitch/modules/mod_skinny.so
+etc/freeswitch/_example/skinny_profiles/internal.xml

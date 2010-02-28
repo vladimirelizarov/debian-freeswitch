@@ -1,0 +1,414 @@
+Source: freeswitch
+Maintainer: Denis Bezrodnykh <bdi@burnet.ru>
+Section: net
+Priority: extra
+Build-Depends: debhelper (>= 7.0.8), fakeroot, automake1.9, autoconf, libtool, unixodbc-dev, libasound2-dev, libcurl4-openssl-dev|libcurl3-openssl-dev, libssl-dev, ncurses-dev, libogg-dev, libvorbis-dev, libperl-dev, libgdbm-dev, libdb-dev, libgnutls-dev, libtiff4-dev, python, libmemcache-dev, memcached, libx11-dev, libopal-dev (>= 3.6.6~dfsg), erlang-dev, quilt (>= 0.46-7)
+Standards-Version: 3.7.3
+
+Package: freeswitch
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Recommends: freeswitch-lang-en
+Suggests: libfreeswitch-spidermonkey, libfreeswitch-lua
+Description: The FreeSWITCH open source telephony platform
+ FreeSWITCH is an open source telephony platform designed to facilitate the
+ creation of voice and chat driven products scaling from a soft-phone up to
+ a soft-switch.  It can be used as a simple switching engine, a media gateway
+ or a media server to host IVR applications using simple scripts or XML to
+ control the callflow.
+
+Package: libfreeswitch
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: The FreeSWITCH(TM) open source telephony platform Debug symbols
+ FreeSWITCH is an open source telephony platform designed to facilitate the
+ creation of voice and chat driven products scaling from a soft-phone up to
+ a soft-switch.  It can be used as a simple switching engine, a media gateway
+ or a media server to host IVR applications using simple scripts or XML to
+ control the callflow.
+
+Package: freeswitch-dev
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Development Package for the FreeSWITCH(TM)
+ FreeSWITCH is an open source telephony platform designed to facilitate the
+ creation of voice and chat driven products scaling from a soft-phone up to
+ a soft-switch.  It can be used as a simple switching engine, a media gateway
+ or a media server to host IVR applications using simple scripts or XML to
+ control the callflow.
+
+Package: libfreeswitch-spidermonkey
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: A Javascript engine for FreeSWITCH(TM)
+ FreeSWITCH is an open source telephony platform designed to facilitate the
+ creation of voice and chat driven products scaling from a soft-phone up to
+ a soft-switch.  It can be used as a simple switching engine, a media gateway
+ or a media server to host IVR applications using simple scripts or XML to
+ control the callflow.
+
+Package: libfreeswitch-perl
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: A perl engine for FreeSWITCH(TM)
+ FreeSWITCH is an open source telephony platform designed to facilitate the
+ creation of voice and chat driven products scaling from a soft-phone up to
+ a soft-switch.  It can be used as a simple switching engine, a media gateway
+ or a media server to host IVR applications using simple scripts or XML to
+ control the callflow.
+
+Package: libfreeswitch-syslog
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Syslog logger for FreeSWITCH(TM)
+ FreeSWITCH is an open source telephony platform designed to facilitate the
+ creation of voice and chat driven products scaling from a soft-phone up to
+ a soft-switch.  It can be used as a simple switching engine, a media gateway
+ or a media server to host IVR applications using simple scripts or XML to
+ control the callflow.
+ .
+ mod_syslog
+
+Package: libfreeswitch-erlang
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Erlang event interface module for FreeSWITCH(TM)
+ FreeSWITCH is an open source telephony platform designed to facilitate the
+ creation of voice and chat driven products scaling from a soft-phone up to
+ a soft-switch.  It can be used as a simple switching engine, a media gateway
+ or a media server to host IVR applications using simple scripts or XML to
+ control the callflow.
+ .
+ mod_erlang_event is a derivative of mod_event_socket that sends events and
+ receives commands in erlang's binary term format. This allows FreeSWITCH™ to
+ behave like just another erlang node.
+ .
+ Erlang is a concurrent, soft real-time, distributed programming language
+ and runtime system.
+
+Package: libfreeswitch-dingaling
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: XMPP/Jingle endpoint module for FreeSWITCH(TM)
+ FreeSWITCH is an open source telephony platform designed to facilitate the
+ creation of voice and chat driven products scaling from a soft-phone up to
+ a soft-switch.  It can be used as a simple switching engine, a media gateway
+ or a media server to host IVR applications using simple scripts or XML to
+ control the callflow.
+ .
+ Jingle is an extension to the Jabber/XMPP protocol, to allow for peer-to-peer
+ (p2p) signalling for multimedia interactions such as voice or video.
+
+Package: libfreeswitch-openzap
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Zaptel/Sangoma API module for FreeSWITCH(TM)
+ FreeSWITCH is an open source telephony platform designed to facilitate the
+ creation of voice and chat driven products scaling from a soft-phone up to
+ a soft-switch.  It can be used as a simple switching engine, a media gateway
+ or a media server to host IVR applications using simple scripts or XML to
+ control the callflow.
+ .
+ OpenZAP is FreeSWITCH's interface to the Sangoma TDM API and Zaptel TDM API
+ interfaces.
+
+Package: libfreeswitch-portaudio
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Portaudio interface for FreeSWITCH(TM)
+ FreeSWITCH is an open source telephony platform designed to facilitate the
+ creation of voice and chat driven products scaling from a soft-phone up to
+ a soft-switch.  It can be used as a simple switching engine, a media gateway
+ or a media server to host IVR applications using simple scripts or XML to
+ control the callflow.
+ .
+ mod_portaudio is used for interfacing with sound card using PortAudio portable
+ cross-platform Audio API
+
+Package: libfreeswitch-rss
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: mod_rss module for FreeSWITCH(TM)
+ FreeSWITCH is an open source telephony platform designed to facilitate the
+ creation of voice and chat driven products scaling from a soft-phone up to
+ a soft-switch.  It can be used as a simple switching engine, a media gateway
+ or a media server to host IVR applications using simple scripts or XML to
+ control the callflow.
+ .
+ http://wiki.freeswitch.org/wiki/Mod_rss
+
+Package: libfreeswitch-lua
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: A lua engine for FreeSWITCH(TM)
+ FreeSWITCH is an open source telephony platform designed to facilitate the
+ creation of voice and chat driven products scaling from a soft-phone up to
+ a soft-switch.  It can be used as a simple switching engine, a media gateway
+ or a media server to host IVR applications using simple scripts or XML to
+ control the callflow.
+
+Package: libfreeswitch-g7231-passthru
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Pass through g723.1 Codec support for the FreeSWITCH(TM)
+ FreeSWITCH is an open source telephony platform designed to facilitate the
+ creation of voice and chat driven products scaling from a soft-phone up to
+ a soft-switch.  It can be used as a simple switching engine, a media gateway
+ or a media server to host IVR applications using simple scripts or XML to
+ control the callflow.
+
+Package: libfreeswitch-amr-passthru
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Pass through AMR-NB and AMR-WB codecs support for the FreeSWITCH(TM)
+ FreeSWITCH is an open source telephony platform designed to facilitate the
+ creation of voice and chat driven products scaling from a soft-phone up to
+ a soft-switch.  It can be used as a simple switching engine, a media gateway
+ or a media server to host IVR applications using simple scripts or XML to
+ control the callflow.
+
+Package: libfreeswitch-g729-passthru
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Pass through g729 Codec support for the FreeSWITCH(TM)
+ FreeSWITCH is an open source telephony platform designed to facilitate the
+ creation of voice and chat driven products scaling from a soft-phone up to
+ a soft-switch.  It can be used as a simple switching engine, a media gateway
+ or a media server to host IVR applications using simple scripts or XML to
+ control the callflow.
+
+Package: libfreeswitch-broadvoice
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Broadvoice codecs for the FreeSWITCH(TM)
+ FreeSWITCH is an open source telephony platform designed to facilitate the
+ creation of voice and chat driven products scaling from a soft-phone up to
+ a soft-switch.  It can be used as a simple switching engine, a media gateway
+ or a media server to host IVR applications using simple scripts or XML to
+ control the callflow.
+ .
+ Broadvoice codecs are BV16 for narrowband 8kHz audio and the BV32 for
+ wideband 16kHz audio
+
+Package: libfreeswitch-speex
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Pass through g723.1 Codec support for the FreeSWITCH(TM)
+ FreeSWITCH is an open source telephony platform designed to facilitate the
+ creation of voice and chat driven products scaling from a soft-phone up to
+ a soft-switch.  It can be used as a simple switching engine, a media gateway
+ or a media server to host IVR applications using simple scripts or XML to
+ control the callflow.
+
+Package: libfreeswitch-siren
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Polycom Siren audio codec support for the FreeSWITCH(TM)
+ FreeSWITCH is an open source telephony platform designed to facilitate the
+ creation of voice and chat driven products scaling from a soft-phone up to
+ a soft-switch.  It can be used as a simple switching engine, a media gateway
+ or a media server to host IVR applications using simple scripts or XML to
+ control the callflow.
+
+Package: libfreeswitch-celt
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: CELT audio codec support for the FreeSWITCH(TM)
+ FreeSWITCH is an open source telephony platform designed to facilitate the
+ creation of voice and chat driven products scaling from a soft-phone up to
+ a soft-switch.  It can be used as a simple switching engine, a media gateway
+ or a media server to host IVR applications using simple scripts or XML to
+ control the callflow.
+
+Package: libfreeswitch-shout
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: MP3 playback support for the FreeSWITCH(TM)
+ FreeSWITCH is an open source telephony platform designed to facilitate the
+ creation of voice and chat driven products scaling from a soft-phone up to
+ a soft-switch.  It can be used as a simple switching engine, a media gateway
+ or a media server to host IVR applications using simple scripts or XML to
+ control the callflow.
+ .
+ mod_shout
+
+Package: libfreeswitch-snom
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Module for using Snom phones softkeys for the FreeSWITCH(TM)
+ FreeSWITCH is an open source telephony platform designed to facilitate the
+ creation of voice and chat driven products scaling from a soft-phone up to
+ a soft-switch.  It can be used as a simple switching engine, a media gateway
+ or a media server to host IVR applications using simple scripts or XML to
+ control the callflow.
+ .
+ mod_snoms is an application for controlling the functionality and appearance
+ of the programmable softkeys on a Snom 3xx phone.
+
+Package: libfreeswitch-voicemail
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Voicemail application for the FreeSWITCH(TM)
+ FreeSWITCH is an open source telephony platform designed to facilitate the
+ creation of voice and chat driven products scaling from a soft-phone up to
+ a soft-switch.  It can be used as a simple switching engine, a media gateway
+ or a media server to host IVR applications using simple scripts or XML to
+ control the callflow.
+ .
+ mod_voicemail is a voicemail application. It allows you to send calls to
+ voicemail for messages to be left for your users and lets them check for
+ messages later.
+
+Package: freeswitch-lang-en
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Recommends: freeswitch-sounds-en-us-callie-8000
+Suggests: freeswitch-sounds-en-us-callie-16000, freeswitch-sounds-en-us-callie-32000, freeswitch-sounds-en-us-callie-48000
+Description: English language files for the FreeSWITCH(TM)
+ FreeSWITCH is an open source telephony platform designed to facilitate the
+ creation of voice and chat driven products scaling from a soft-phone up to
+ a soft-switch.  It can be used as a simple switching engine, a media gateway
+ or a media server to host IVR applications using simple scripts or XML to
+ control the callflow.
+
+Package: freeswitch-lang-de
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: German language files for the FreeSWITCH(TM)
+ FreeSWITCH is an open source telephony platform designed to facilitate the
+ creation of voice and chat driven products scaling from a soft-phone up to
+ a soft-switch.  It can be used as a simple switching engine, a media gateway
+ or a media server to host IVR applications using simple scripts or XML to
+ control the callflow.
+
+Package: freeswitch-lang-fr
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: French language files for the FreeSWITCH(TM)
+ FreeSWITCH is an open source telephony platform designed to facilitate the
+ creation of voice and chat driven products scaling from a soft-phone up to
+ a soft-switch.  It can be used as a simple switching engine, a media gateway
+ or a media server to host IVR applications using simple scripts or XML to
+ control the callflow.
+
+Package: freeswitch-lang-it
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Italian language files for the FreeSWITCH(TM)
+ FreeSWITCH is an open source telephony platform designed to facilitate the
+ creation of voice and chat driven products scaling from a soft-phone up to
+ a soft-switch.  It can be used as a simple switching engine, a media gateway
+ or a media server to host IVR applications using simple scripts or XML to
+ control the callflow.
+
+Package: freeswitch-lang-es
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Spanish language files for the FreeSWITCH(TM)
+ FreeSWITCH is an open source telephony platform designed to facilitate the
+ creation of voice and chat driven products scaling from a soft-phone up to
+ a soft-switch.  It can be used as a simple switching engine, a media gateway
+ or a media server to host IVR applications using simple scripts or XML to
+ control the callflow.
+
+Package: freeswitch-lang-nl
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Dutch language files for the FreeSWITCH(TM)
+ FreeSWITCH is an open source telephony platform designed to facilitate the
+ creation of voice and chat driven products scaling from a soft-phone up to
+ a soft-switch.  It can be used as a simple switching engine, a media gateway
+ or a media server to host IVR applications using simple scripts or XML to
+ control the callflow.
+
+Package: freeswitch-lang-ru
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Recommends: freeswitch-sounds-ru-ru-elena-8000
+Suggests: freeswitch-sounds-ru-ru-elena-16000, freeswitch-sounds-ru-ru-elena-32000, freeswitch-sounds-ru-ru-elena-48000
+Description: Russian language files for the FreeSWITCH(TM)
+ FreeSWITCH is an open source telephony platform designed to facilitate the
+ creation of voice and chat driven products scaling from a soft-phone up to
+ a soft-switch.  It can be used as a simple switching engine, a media gateway
+ or a media server to host IVR applications using simple scripts or XML to
+ control the callflow.
+
+Package: libfreeswitch-directory
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Dial by name directory application for FreeSWITCH(TM)
+ FreeSWITCH is an open source telephony platform designed to facilitate the
+ creation of voice and chat driven products scaling from a soft-phone up to
+ a soft-switch.  It can be used as a simple switching engine, a media gateway
+ or a media server to host IVR applications using simple scripts or XML to
+ control the callflow.
+ .
+ mod_directory is a dial by name directory application.
+
+Package: libfreeswitch-distributor
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Simple round-robin style distributions application for FreeSWITCH(TM)
+ FreeSWITCH is an open source telephony platform designed to facilitate the
+ creation of voice and chat driven products scaling from a soft-phone up to
+ a soft-switch.  It can be used as a simple switching engine, a media gateway
+ or a media server to host IVR applications using simple scripts or XML to
+ control the callflow.
+ .
+ mod_distributor is a module is used to create simple round-robin style distributions. 
+
+Package: libfreeswitch-lcr
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Least Cost Routing application for FreeSWITCH(TM)
+ FreeSWITCH is an open source telephony platform designed to facilitate the
+ creation of voice and chat driven products scaling from a soft-phone up to
+ a soft-switch.  It can be used as a simple switching engine, a media gateway
+ or a media server to host IVR applications using simple scripts or XML to
+ control the callflow.
+ .
+ mod_lcr implements LCR (Least Cost Routing)
+
+Package: libfreeswitch-unimrcp
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: MRCP (client) support for FreeSWITCH(TM)
+ FreeSWITCH is an open source telephony platform designed to facilitate the
+ creation of voice and chat driven products scaling from a soft-phone up to
+ a soft-switch.  It can be used as a simple switching engine, a media gateway
+ or a media server to host IVR applications using simple scripts or XML to
+ control the callflow.
+ .
+ mod_unimrcp is the FreeSWITCH module that allows communication with Media
+ Resource Control Protocol (MRCP) servers.
+
+Package: libfreeswitch-memcache
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: memcached API interface module for FreeSWITCH(TM)
+ FreeSWITCH is an open source telephony platform designed to facilitate the
+ creation of voice and chat driven products scaling from a soft-phone up to
+ a soft-switch.  It can be used as a simple switching engine, a media gateway
+ or a media server to host IVR applications using simple scripts or XML to
+ control the callflow.
+ .
+ mod_memcache implements an API interface to memcached which is a
+ "high-performance, distributed memory object caching system, generic in
+ nature, but intended for use in speeding up dynamic web applications by
+ alleviating database load."
+ .
+ This module can be used to distribute key/value pairs without having to
+ resort to using ODBC and a database.
+
+Package: libfreeswitch-skinny
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Skinny Call Control Protocol (SCCP) module for FreeSWITCH(TM)
+ FreeSWITCH is an open source telephony platform designed to facilitate the
+ creation of voice and chat driven products scaling from a soft-phone up to
+ a soft-switch.  It can be used as a simple switching engine, a media gateway
+ or a media server to host IVR applications using simple scripts or XML to
+ control the callflow.
+ .
+ SCCP (or Skinny), is a ToIP protocol used in Cisco products like Cisco
+ IP Phones 79xx.

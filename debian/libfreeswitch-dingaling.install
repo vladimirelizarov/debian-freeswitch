@@ -1,0 +1,4 @@
+usr/lib/freeswitch/modules/mod_dingaling.so
+etc/freeswitch/_example/autoload_configs/dingaling.conf.xml
+etc/freeswitch/_example/jingle_profiles/server.xml
+etc/freeswitch/_example/jingle_profiles/client.xml

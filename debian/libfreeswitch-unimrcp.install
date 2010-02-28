@@ -1,0 +1,8 @@
+etc/freeswitch/_example/autoload_configs/unimrcp.conf.xml
+etc/freeswitch/_example/mrcp_profiles/unimrcpserver-mrcp-v1.xml
+etc/freeswitch/_example/mrcp_profiles/loquendo-7-mrcp-v2.xml
+etc/freeswitch/_example/mrcp_profiles/voxeo-prophecy-8.0-mrcp-v1.xml
+etc/freeswitch/_example/mrcp_profiles/nuance-1.0.0-mrcp-v1.xml
+etc/freeswitch/_example/mrcp_profiles/nuance-5.0-mrcp-v2.xml
+etc/freeswitch/_example/mrcp_profiles/nuance-5.0-mrcp-v1.xml
+usr/lib/freeswitch/modules/mod_unimrcp.so

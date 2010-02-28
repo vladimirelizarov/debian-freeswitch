@@ -1,0 +1,6 @@
+usr/lib/freeswitch/modules/mod_say_en.so
+etc/freeswitch/_example/lang/en/*.xml
+etc/freeswitch/_example/lang/en/demo/*.xml
+etc/freeswitch/_example/lang/en/vm/*.xml
+etc/freeswitch/_example/lang/en/dir/sounds.xml
+etc/freeswitch/_example/lang/en/dir/tts.xml

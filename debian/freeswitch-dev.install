@@ -1,0 +1,6 @@
+usr/lib/freeswitch/*.a
+usr/lib/freeswitch/*.la
+usr/lib/freeswitch/modules/*.a
+usr/lib/freeswitch/modules/*.la
+usr/include/freeswitch/*.h
+usr/include/*.h /usr/include/freeswitch

@@ -1,0 +1,14 @@
+usr/lib/freeswitch/modules/mod_openzap.so
+usr/lib/freeswitch/modules/ozmod_analog_em.so
+usr/lib/freeswitch/modules/ozmod_analog.so
+usr/lib/freeswitch/modules/ozmod_isdn.so
+usr/lib/freeswitch/modules/ozmod_skel.so
+usr/lib/freeswitch/modules/ozmod_zt.so
+usr/lib/freeswitch/libopenzap*.so*
+etc/freeswitch/_example/openzap.conf
+etc/freeswitch/_example/autoload_configs/openzap.conf.xml
+etc/freeswitch/_example/zt.conf
+etc/freeswitch/_example/tones.conf
+etc/freeswitch/_example/pika.conf
+etc/freeswitch/_example/wanpipe.conf
+etc/freeswitch/_example/m3ua.conf

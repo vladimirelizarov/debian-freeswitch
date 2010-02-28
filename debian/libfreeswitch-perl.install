@@ -1,0 +1,5 @@
+usr/lib/freeswitch/modules/mod_perl.so
+etc/freeswitch/_example/autoload_configs/perl.conf.xml
+usr/perl/freeswitch.so usr/lib/freeswitch/perl/
+usr/perl/freeswitch.pm usr/lib/freeswitch/perl/
+

@@ -1,0 +1,5 @@
+/etc/freeswitch/_example/lang/fr/fr.xml
+/etc/freeswitch/_example/lang/fr/demo/demo.xml
+/etc/freeswitch/_example/lang/fr/vm/sounds.xml
+/etc/freeswitch/_example/lang/fr/dir/tts.xml
+/etc/freeswitch/_example/lang/fr/dir/sounds.xml
