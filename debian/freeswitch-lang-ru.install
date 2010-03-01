@@ -1,5 +1,4 @@
 usr/lib/freeswitch/modules/mod_say_ru.so
-etc/freeswitch/_example/lang/ru/vm
 etc/freeswitch/_example/lang/ru/vm/sounds.xml
 etc/freeswitch/_example/lang/ru/vm/tts.xml
 etc/freeswitch/_example/lang/ru/dir/sounds.xml
