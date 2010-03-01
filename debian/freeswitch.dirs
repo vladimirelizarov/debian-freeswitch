@@ -1,3 +1,4 @@
 var/log/freeswitch
 var/log/freeswitch/xml_cdr
 var/lib/freeswitch/db
+var/run/freeswitch

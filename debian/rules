@@ -43,7 +43,7 @@ freeswitch/config.status: freeswitch/Makefile.in
 		--datadir=/usr/share/freeswitch \
 		--includedir=/usr/include/freeswitch \
 		--with-modinstdir=/usr/lib/freeswitch/modules \
-		--with-rundir=/var/run \
+		--with-rundir=/var/run/freeswitch \
 		--with-scriptdir=/usr/share/freeswitch/scripts \
 		--with-grammardir=/var/lib/freeswitch/grammar \
 		--with-recordingsdir=/var/lib/freeswitch/recordings \

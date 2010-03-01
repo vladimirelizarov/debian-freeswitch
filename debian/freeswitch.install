@@ -1,10 +1,8 @@
 usr/share/freeswitch/htdocs/*
 usr/bin/freeswitch
-usr/bin/fs_cli
 usr/bin/gentls_cert usr/lib/freeswitch
 usr/bin/fsxs
 usr/bin/fs_ivrd
-usr/bin/scripts/*
 usr/lib/freeswitch/pkgconfig/freeswitch.pc usr/lib/pkgconfig
 usr/lib/freeswitch/pkgconfig/openzap.pc usr/lib/pkgconfig
 etc/freeswitch/_example/vars.xml

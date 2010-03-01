@@ -2,12 +2,12 @@ Source: freeswitch
 Maintainer: Denis Bezrodnykh <bdi@burnet.ru>
 Section: net
 Priority: extra
-Build-Depends: debhelper (>= 7.0.8), fakeroot, automake1.9, autoconf, libtool, unixodbc-dev, libasound2-dev, libcurl4-openssl-dev|libcurl3-openssl-dev, libssl-dev, ncurses-dev, libogg-dev, libvorbis-dev, libperl-dev, libgdbm-dev, libdb-dev, libgnutls-dev, libtiff4-dev, python, libmemcache-dev, memcached, libx11-dev, libopal-dev (>= 3.6.6~dfsg), erlang-dev, quilt (>= 0.46-7)
+Build-Depends: debhelper (>= 7.0.8), automake1.9, autoconf, libtool, unixodbc-dev, libasound2-dev, libcurl4-openssl-dev|libcurl3-openssl-dev, libssl-dev, ncurses-dev, libogg-dev, libvorbis-dev, libperl-dev, libgdbm-dev, libdb-dev, libgnutls-dev, libtiff4-dev, python, libmemcache-dev, memcached, libx11-dev, libopal-dev (>= 3.6.6~dfsg), erlang-dev, quilt (>= 0.46-7)
 Standards-Version: 3.7.3
 
 Package: freeswitch
 Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}
+Depends: ${shlibs:Depends}, ${misc:Depends}, freeswitch-cli
 Recommends: freeswitch-lang-en
 Suggests: libfreeswitch-spidermonkey, libfreeswitch-lua
 Description: The FreeSWITCH open source telephony platform
@@ -262,8 +262,6 @@ Description: Voicemail application for the FreeSWITCH(TM)
 Package: freeswitch-lang-en
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
-Recommends: freeswitch-sounds-en-us-callie-8000
-Suggests: freeswitch-sounds-en-us-callie-16000, freeswitch-sounds-en-us-callie-32000, freeswitch-sounds-en-us-callie-48000
 Description: English language files for the FreeSWITCH(TM)
  FreeSWITCH is an open source telephony platform designed to facilitate the
  creation of voice and chat driven products scaling from a soft-phone up to
@@ -412,3 +410,17 @@ Description: Skinny Call Control Protocol (SCCP) module for FreeSWITCH(TM)
  .
  SCCP (or Skinny), is a ToIP protocol used in Cisco products like Cisco
  IP Phones 79xx.
+
+Package: freeswitch-cli
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Remote command line interface for the FreeSWITCH(TM)
+ FreeSWITCH is an open source telephony platform designed to facilitate the
+ creation of voice and chat driven products scaling from a soft-phone up to
+ a soft-switch.  It can be used as a simple switching engine, a media gateway
+ or a media server to host IVR applications using simple scripts or XML to
+ control the callflow.
+ .
+ fs_cli allows connect CLI to local or remote FreeSWITCH instance. Important
+ if Switch running as a daemon.
+
