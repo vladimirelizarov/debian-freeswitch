@@ -31,8 +31,10 @@ case "$1" in
 				freeswitch
 			adduser freeswitch audio
 		fi
-		chown -R freeswitch:freeswitch /var/{run,db,log}/freeswitch
+		chown -R freeswitch:freeswitch /var/{run,lib/db,log}/freeswitch
+		chmod -R ugo+r,u+rw /var/{run,lib/db,log}/freeswitch
 		chown -R freeswitch:freeswitch /etc/freeswitch
+		chmod -R ugo+r,u+rw /etc/freeswitch
 	;;
 
 	abort-upgrade|abort-remove|abort-deconfigure)
