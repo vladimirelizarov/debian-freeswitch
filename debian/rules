@@ -96,7 +96,6 @@ binary-arch: install
 	dh_installinit --sourcedir=debian/tmp
 	dh_install --fail-missing --sourcedir=debian/tmp \
 		--exclude=usr/perl/freeswitch \
-		--exclude=usr/lib/freeswitch/modules/mod_opal.so \
 		--exclude=etc/freeswitch/_example/autoload_configs/opal.conf.xml
 	dh_link
 	dh_strip
@@ -111,7 +110,7 @@ binary-arch: install
 
 binary: binary-indep binary-arch
 
-get-orig-source: freeswitch freeswitch/libs/celt-0.7.1 freeswitch/libs/libbv16-0.1 freeswitch/libs/libbv32-0.1 freeswitch/libs/libmemcached-0.32 freeswitch/libs/libshout-2.2.2 freeswitch/libs/mpg123 freeswitch/libs/lame-3.97
+upstream-source: freeswitch freeswitch/libs/celt-0.7.1 freeswitch/libs/libbv16-0.1 freeswitch/libs/libbv32-0.1 freeswitch/libs/libmemcached-0.32 freeswitch/libs/libshout-2.2.2 freeswitch/libs/mpg123 freeswitch/libs/lame-3.97
 
 freeswitch:
 	svn co --revision {20100227T0400Z} http://svn.freeswitch.org/svn/freeswitch/trunk freeswitch
