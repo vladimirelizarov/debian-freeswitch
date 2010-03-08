@@ -3,7 +3,7 @@ freeswitch (1.0.5~201003060550-bee1) unstable; urgency=low
   * svn trunk 6 Mar 2010 05:50 +0000
   * mod_dialplan_asterisk in separate package
   * mod_h26x in separate package
-  * mod_skypeiax enabled
+  * mod_skypiax enabled
 
  -- Denis Bezrodnykh <bdi@burnet.ru>  Sat, 06 Mar 2010 13:51:54 +0800
 
