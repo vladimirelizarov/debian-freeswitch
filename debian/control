@@ -424,3 +424,42 @@ Description: Remote command line interface for the FreeSWITCH(TM)
  fs_cli allows connect CLI to local or remote FreeSWITCH instance. Important
  if Switch running as a daemon.
 
+Package: libfreeswitch-dialplan-asterisk
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Asterisk-fashioned dialplan for FreeSWITCH(TM)
+ FreeSWITCH is an open source telephony platform designed to facilitate the
+ creation of voice and chat driven products scaling from a soft-phone up to
+ a soft-switch.  It can be used as a simple switching engine, a media gateway
+ or a media server to host IVR applications using simple scripts or XML to
+ control the callflow.
+ .
+ mod_dialplan_asterisk allows you to program dialplan in Asterisk-like format
+
+Package: libfreeswitch-h26x-passthru
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Pass through H.26x video codec support for FreeSWITCH(TM)
+ FreeSWITCH is an open source telephony platform designed to facilitate the
+ creation of voice and chat driven products scaling from a soft-phone up to
+ a soft-switch.  It can be used as a simple switching engine, a media gateway
+ or a media server to host IVR applications using simple scripts or XML to
+ control the callflow.
+ .
+ mod_26x - is a module for H.261, H.263 and H.264 video codec (passthrough)
+ support for FreeSWITCH.
+
+Package: libfreeswitch-skypiax
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Skype support for FreeSWITCH(TM)
+ FreeSWITCH is an open source telephony platform designed to facilitate the
+ creation of voice and chat driven products scaling from a soft-phone up to
+ a soft-switch.  It can be used as a simple switching engine, a media gateway
+ or a media server to host IVR applications using simple scripts or XML to
+ control the callflow.
+ .
+ Skypiax is an endpoint (channel driver) that uses the Skype client as an
+ interface to the Skype network, and allows incoming and outgoing Skype calls
+ to/from FreeSWITCH 
+
