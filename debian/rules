@@ -95,9 +95,7 @@ binary-arch: install
 	dh_installinit --sourcedir=debian/tmp
 	dh_install --fail-missing --sourcedir=debian/tmp \
 		--exclude=usr/perl/freeswitch \
-		--exclude=etc/freeswitch/_example/autoload_configs/opal.conf.xml \
-		--exclude=etc/freeswitch/_example/autoload_configs/skinny.conf.xml \
-		--exclude=etc/freeswitch/_example/skinny_profiles/internal.xml
+		--exclude=etc/freeswitch/_example/autoload_configs/opal.conf.xml
 	dh_link
 	dh_strip
 	dh_compress
@@ -114,7 +112,7 @@ binary: binary-indep binary-arch
 upstream-source: freeswitch freeswitch/libs/celt-0.7.1 freeswitch/libs/libbv16-0.1 freeswitch/libs/libbv32-0.1 freeswitch/libs/libmemcached-0.32 freeswitch/libs/libshout-2.2.2 freeswitch/libs/mpg123 freeswitch/libs/lame-3.97
 
 freeswitch:
-	svn co --revision {20100306T0550Z} http://svn.freeswitch.org/svn/freeswitch/trunk freeswitch
+	svn co --revision {20100313T0723Z} http://svn.freeswitch.org/svn/freeswitch/trunk freeswitch
 
 freeswitch/libs/%:
 	wget -qO- http://files.freeswitch.org/downloads/libs/$(subst freeswitch/libs/,,$@).tar.gz | tar xzC freeswitch/libs

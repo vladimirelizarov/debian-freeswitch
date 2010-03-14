@@ -1,3 +1,11 @@
+freeswitch (1.0.5~201003130723-bee1) unstable; urgency=low
+
+  * svn trunk 13 Mar 2010 07:23 +0000
+  * mod_skinny enabled
+  * mod_silk enabled
+
+ -- Denis Bezrodnykh <bdi@burnet.ru>  Sat, 13 Mar 2010 15:24:32 +0800
+
 freeswitch (1.0.5~201003060550-bee1) unstable; urgency=low
 
   * svn trunk 6 Mar 2010 05:50 +0000
