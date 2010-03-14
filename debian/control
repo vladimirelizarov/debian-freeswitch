@@ -2,7 +2,7 @@ Source: freeswitch
 Maintainer: Denis Bezrodnykh <bdi@burnet.ru>
 Section: net
 Priority: extra
-Build-Depends: debhelper (>= 7.0.8), automake1.9, autoconf, libtool, unixodbc-dev, libasound2-dev, libcurl4-openssl-dev|libcurl3-openssl-dev, libssl-dev, ncurses-dev, libogg-dev, libvorbis-dev, libperl-dev, libgdbm-dev, libdb-dev, libgnutls-dev, libtiff4-dev, python, libmemcache-dev, memcached, libx11-dev, libopal-dev (>= 3.6.6~dfsg), erlang-dev, quilt (>= 0.46-7)
+Build-Depends: debhelper (>= 7.0.8), automake1.9, autoconf, libtool, unixodbc-dev, libasound2-dev, libcurl4-openssl-dev|libcurl3-openssl-dev, libssl-dev, ncurses-dev, libogg-dev, libvorbis-dev, libperl-dev, libgdbm-dev, libdb-dev, libgnutls-dev, libtiff4-dev, python, libmemcache-dev, memcached, libx11-dev, erlang-dev, quilt (>= 0.46-7)
 Standards-Version: 3.7.3
 
 Package: freeswitch
