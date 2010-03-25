@@ -1,6 +1,6 @@
 #!/bin/bash
 
-sounds_location=usr/share/freeswitch/sounds/ru/RU/elena
+sounds_location=debian/usr/share/freeswitch/sounds/ru/RU/elena
 for rate in 32000 16000 8000
 do 
     for i in ascii base256 conference currency digits ivr misc phonetic-ascii time voicemail zrtp
