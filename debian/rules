@@ -117,13 +117,16 @@ freeswitch:
 freeswitch/libs/%:
 	wget -qO- http://files.freeswitch.org/downloads/libs/$(subst freeswitch/libs/,,$@).tar.gz | tar xzC freeswitch/libs
 
-freeswitch-sounds-ru:
-	wget -qO- http://files.freeswitch.org/freeswitch-sounds-ru-RU-elena-48000-1.0.12.tar.gz| tar xzC usr/share/freeswitch/sounds/ru/RU/elena|./buildsounds-ru.sh
+freeswitch-sounds-ru
+	wget -qO- http://files.freeswitch.org/freeswitch-sounds-ru-RU-elena-48000-1.0.12.tar.gz| tar xzC usr/share/freeswitch/sounds/ru/RU/elena
+	.debian/buildsounds-ru.sh
 
 freeswitch-sounds-en:
-	wget -qO- http://files.freeswitch.org/freeswitch-sounds-en-us-callie-48000-1.0.8.tar.gz| tar xzC usr/share/freeswitch/sounds/en/us/callie|./buildsounds-en.sh
+	wget -qO- http://files.freeswitch.org/freeswitch-sounds-en-us-callie-48000-1.0.8.tar.gz| tar xzC usr/share/freeswitch/sounds/en/us/callie
+	.debian/buildsounds-en.sh
 
 freeswitch-music:
-	wget -qO- http://files.freeswitch.org/freeswitch-sounds-music-48000-1.0.8.tar.gz| tar xzC usr/share/freeswitch/sounds/music|./buildsounds-music.sh
+	wget -qO- http://files.freeswitch.org/freeswitch-sounds-music-48000-1.0.8.tar.gz| tar xzC usr/share/freeswitch/sounds/music
+	.debian/buildsounds-music.sh
 
 .PHONY: build clean binary-indep binary-arch binary install configure upstream-source
