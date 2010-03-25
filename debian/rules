@@ -117,7 +117,7 @@ freeswitch:
 freeswitch/libs/%:
 	wget -qO- http://files.freeswitch.org/downloads/libs/$(subst freeswitch/libs/,,$@).tar.gz | tar xzC freeswitch/libs
 
-freeswitch-sounds-ru
+freeswitch-sounds-ru:
 	wget -qO- http://files.freeswitch.org/freeswitch-sounds-ru-RU-elena-48000-1.0.12.tar.gz| tar xzC usr/share/freeswitch/sounds/ru/RU/elena
 	.debian/buildsounds-ru.sh
 
