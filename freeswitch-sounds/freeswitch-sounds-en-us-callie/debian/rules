@@ -12,7 +12,7 @@ export DEB_DH_INSTALL_SOURCEDIR=debian/tmp
 build:
 	dh_testdir
 	mkdir -p debian/tmp/usr/share/freeswitch/sounds
-	wget -qO- http://files.freeswitch.org/freeswitch-sounds-music-48000-1.0.13.tar.gz| tar xzC debian/tmp/usr/share/freeswitch/sounds
+	wget -qO- http://files.freeswitch.org/freeswitch-sounds-en-us-callie-48000-1.0.13.tar.gz| tar xzC debian/tmp/usr/share/freeswitch/sounds
 	./buildsounds-en.sh
 
 clean:
