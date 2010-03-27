@@ -1,3 +1,10 @@
+freeswitch (1.0.5~201003271000-veliz1) unstable; urgency=low
+
+  * svn trunk 27 Mar 2010 10:00 +0000
+  * delete patch silkmake.diff
+
+ -- Vladimir Elizarov <me@vladimirelizarov.net>  Sat, 27 Mar 2010 18:02:32 +0400
+
 freeswitch (1.0.5~201003130723-bee1) unstable; urgency=low
 
   * svn trunk 13 Mar 2010 07:23 +0000

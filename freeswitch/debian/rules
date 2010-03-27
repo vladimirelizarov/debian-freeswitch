@@ -109,28 +109,13 @@ binary-arch: install
 
 binary: binary-indep binary-arch
 
-upstream-source: freeswitch freeswitch/libs/celt-0.7.1 freeswitch/libs/libbv16-0.1 freeswitch/libs/libbv32-0.1 freeswitch/libs/libmemcached-0.32 freeswitch/libs/libshout-2.2.2 freeswitch/libs/mpg123 freeswitch/libs/lame-3.97 freeswitch-sounds-ru freeswitch-sounds-en  freeswitch-music
+upstream-source: freeswitch freeswitch/libs/celt-0.7.1 freeswitch/libs/libbv16-0.1 freeswitch/libs/libbv32-0.1 freeswitch/libs/libmemcached-0.32 freeswitch/libs/libshout-2.2.2 freeswitch/libs/mpg123 freeswitch/libs/lame-3.97
 
 freeswitch:
 	svn co --revision {20100313T0723Z} http://svn.freeswitch.org/svn/freeswitch/trunk freeswitch
 
 freeswitch/libs/%:
 	wget -qO- http://files.freeswitch.org/downloads/libs/$(subst freeswitch/libs/,,$@).tar.gz | tar xzC freeswitch/libs
-
-freeswitch-sounds-ru:
-	mkdir -p usr/share/freeswitch/sounds/ru/RU/elena
-	wget -qO- http://files.freeswitch.org/freeswitch-sounds-ru-RU-elena-48000-1.0.12.tar.gz| tar xzC usr/share/freeswitch/sounds
-	./buildsounds-ru.sh
-
-freeswitch-sounds-en:
-	mkdir -p usr/share/freeswitch/sounds/en/us/callie
-	wget -qO- http://files.freeswitch.org/freeswitch-sounds-en-us-callie-48000-1.0.8.tar.gz| tar xzC usr/share/freeswitch/sounds
-	./buildsounds-en.sh
-
-freeswitch-music:
-	mkdir -p usr/share/freeswitch/sounds/music
-	wget -qO- http://files.freeswitch.org/freeswitch-sounds-music-48000-1.0.8.tar.gz| tar xzC usr/share/freeswitch/sounds
-	./buildsounds-music.sh
 
 .PHONY: build clean binary-indep binary-arch binary install configure upstream-source
 

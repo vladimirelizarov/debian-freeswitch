@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/!svn/ver/15809/freeswitch/trunk/debian/sounds/freeswitch-sounds-music/debian
+END
+control
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/!svn/ver/15809/freeswitch/trunk/debian/sounds/freeswitch-sounds-music/debian/control
+END
+freeswitch-sounds-music-32000.install
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/!svn/ver/15809/freeswitch/trunk/debian/sounds/freeswitch-sounds-music/debian/freeswitch-sounds-music-32000.install
+END
+files
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/!svn/ver/15809/freeswitch/trunk/debian/sounds/freeswitch-sounds-music/debian/files
+END
+freeswitch-sounds-music-16000.install
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/!svn/ver/15809/freeswitch/trunk/debian/sounds/freeswitch-sounds-music/debian/freeswitch-sounds-music-16000.install
+END
+buildsounds.sh
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/!svn/ver/15809/freeswitch/trunk/debian/sounds/freeswitch-sounds-music/debian/buildsounds.sh
+END
+freeswitch-sounds-music-8000.install
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/!svn/ver/15809/freeswitch/trunk/debian/sounds/freeswitch-sounds-music/debian/freeswitch-sounds-music-8000.install
+END
+changelog
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/!svn/ver/15809/freeswitch/trunk/debian/sounds/freeswitch-sounds-music/debian/changelog
+END
+copyright
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/!svn/ver/15809/freeswitch/trunk/debian/sounds/freeswitch-sounds-music/debian/copyright
+END
+freeswitch-sounds-music-48000.install
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/!svn/ver/15809/freeswitch/trunk/debian/sounds/freeswitch-sounds-music/debian/freeswitch-sounds-music-48000.install
+END
+rules
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/!svn/ver/15809/freeswitch/trunk/debian/sounds/freeswitch-sounds-music/debian/rules
+END

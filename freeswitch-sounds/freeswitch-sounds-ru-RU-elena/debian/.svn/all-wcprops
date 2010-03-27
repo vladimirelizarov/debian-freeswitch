@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/!svn/ver/15809/freeswitch/trunk/debian/sounds/freeswitch-sounds-ru-RU-elena/debian
+END
+freeswitch-sounds-ru-ru-elena-16000.install
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/!svn/ver/15809/freeswitch/trunk/debian/sounds/freeswitch-sounds-ru-RU-elena/debian/freeswitch-sounds-ru-ru-elena-16000.install
+END
+control
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/!svn/ver/15809/freeswitch/trunk/debian/sounds/freeswitch-sounds-ru-RU-elena/debian/control
+END
+freeswitch-sounds-ru-ru-elena-8000.install
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/!svn/ver/15809/freeswitch/trunk/debian/sounds/freeswitch-sounds-ru-RU-elena/debian/freeswitch-sounds-ru-ru-elena-8000.install
+END
+files
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/!svn/ver/15809/freeswitch/trunk/debian/sounds/freeswitch-sounds-ru-RU-elena/debian/files
+END
+buildsounds.sh
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/!svn/ver/15809/freeswitch/trunk/debian/sounds/freeswitch-sounds-ru-RU-elena/debian/buildsounds.sh
+END
+freeswitch-sounds-ru-ru-elena-48000.install
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/!svn/ver/15809/freeswitch/trunk/debian/sounds/freeswitch-sounds-ru-RU-elena/debian/freeswitch-sounds-ru-ru-elena-48000.install
+END
+changelog
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/!svn/ver/15809/freeswitch/trunk/debian/sounds/freeswitch-sounds-ru-RU-elena/debian/changelog
+END
+copyright
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/!svn/ver/15809/freeswitch/trunk/debian/sounds/freeswitch-sounds-ru-RU-elena/debian/copyright
+END
+rules
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/!svn/ver/15809/freeswitch/trunk/debian/sounds/freeswitch-sounds-ru-RU-elena/debian/rules
+END
+freeswitch-sounds-ru-ru-elena-32000.install
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/!svn/ver/15809/freeswitch/trunk/debian/sounds/freeswitch-sounds-ru-RU-elena/debian/freeswitch-sounds-ru-ru-elena-32000.install
+END

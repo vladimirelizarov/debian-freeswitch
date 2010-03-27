@@ -1,6 +1,6 @@
 #!/bin/bash
 
-sounds_location=usr/share/freeswitch/sounds/music
+sounds_location=debian/tmp/usr/share/freeswitch/sounds/music
 for rate in 32000 16000 8000
 do 
     mkdir -p $sounds_location/$rate
