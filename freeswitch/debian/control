@@ -438,7 +438,7 @@ Description: Pass through H.26x video codec support for FreeSWITCH(TM)
  mod_26x - is a module for H.261, H.263 and H.264 video codec (passthrough)
  support for FreeSWITCH.
 
-Package: libfreeswitch-skypiax
+Package: libfreeswitch-skypopen
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: Skype support for FreeSWITCH(TM)
@@ -448,7 +448,7 @@ Description: Skype support for FreeSWITCH(TM)
  or a media server to host IVR applications using simple scripts or XML to
  control the callflow.
  .
- Skypiax is an endpoint (channel driver) that uses the Skype client as an
+ Skypopen is an endpoint (channel driver) that uses the Skype client as an
  interface to the Skype network, and allows incoming and outgoing Skype calls
  to/from FreeSWITCH 
 

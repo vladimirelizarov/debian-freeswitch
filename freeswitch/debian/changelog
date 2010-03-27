@@ -2,6 +2,7 @@ freeswitch (1.0.5~201003271000-veliz1) unstable; urgency=low
 
   * svn trunk 27 Mar 2010 10:00 +0000
   * delete patch silkmake.diff
+  * rename mod_skypiax to mod_skypopen (upgrading from mod_skypiax http://wiki.freeswitch.org/wiki/Mod_skypopen_Skype_Endpoint_and_Trunk#Upgrading_from_Skypiax)
 
  -- Vladimir Elizarov <me@vladimirelizarov.net>  Sat, 27 Mar 2010 14:05:00 +0400
 

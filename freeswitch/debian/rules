@@ -82,7 +82,7 @@ install: build
 	mv $(CURDIR)/debian/tmp/etc/freeswitch $(CURDIR)/debian/tmp/etc/freeswitch.example
 	mkdir $(CURDIR)/debian/tmp/etc/freeswitch
 	mv $(CURDIR)/debian/tmp/etc/freeswitch.example $(CURDIR)/debian/tmp/etc/freeswitch/_example
-	cp freeswitch/src/mod/endpoints/mod_skypiax/configs/skypiax.conf.xml $(CURDIR)/debian/tmp/etc/freeswitch/_example/autoload_configs/
+	cp freeswitch/src/mod/endpoints/mod_skypopen/configs/skypopen.conf.xml $(CURDIR)/debian/tmp/etc/freeswitch/_example/autoload_configs/
 
 binary-indep:
 
