@@ -1,3 +1,9 @@
+freeswitch (1.0.5~201004041000-veliz1) unstable; urgency=low
+
+  * svn trunk 04 Apr 2010 10:00 +0000
+
+ -- Vladimir Elizarov <me@vladimirelizarov.net>  Mon, 5 Apr 2010 00:20:23 +0400
+
 freeswitch (1.0.5~201003271000-veliz1) unstable; urgency=low
 
   * svn trunk 27 Mar 2010 10:00 +0000
