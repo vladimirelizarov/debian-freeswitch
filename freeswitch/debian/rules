@@ -113,7 +113,8 @@ binary: binary-indep binary-arch
 upstream-source: freeswitch freeswitch/libs/celt-0.7.1 freeswitch/libs/libbv16-0.1 freeswitch/libs/libbv32-0.1 freeswitch/libs/libmemcached-0.32 freeswitch/libs/libshout-2.2.2 freeswitch/libs/mpg123 freeswitch/libs/lame-3.97
 
 freeswitch:
-	svn co --revision {20100404T1000Z} http://svn.freeswitch.org/svn/freeswitch/trunk freeswitch
+	git clone git://git.freeswitch.org/freeswitch.git freeswitch
+	git checkout `git rev-list master -n 1 --first-parent --before="2010-04-01 10:00"`
 
 freeswitch/libs/%:
 	wget -qO- http://files.freeswitch.org/downloads/libs/$(subst freeswitch/libs/,,$@).tar.gz | tar xzC freeswitch/libs
