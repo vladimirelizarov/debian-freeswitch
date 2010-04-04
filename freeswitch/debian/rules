@@ -114,7 +114,7 @@ upstream-source: freeswitch freeswitch/libs/celt-0.7.1 freeswitch/libs/libbv16-0
 
 freeswitch:
 	git clone git://git.freeswitch.org/freeswitch.git freeswitch
-	cd freeswitch
+	cd freeswitch/freeswitch
 	git checkout `git rev-list master -n 1 --first-parent --before="2010-04-01 10:00"`
 
 freeswitch/libs/%:
