@@ -95,8 +95,8 @@ binary-arch: install
 	dh_installinit --sourcedir=debian/tmp
 	dh_install --fail-missing --sourcedir=debian/tmp \
 		--exclude=usr/perl/freeswitch \
-		--exclude=etc/freeswitch/_example/autoload_configs/opal.conf.xml
-		--exclude=etc/freeswitch/_example/autoload_configs/cdr_pg_csv.conf.xml
+		--exclude=etc/freeswitch/_example/autoload_configs/opal.conf.xml \
+		--exclude=etc/freeswitch/_example/autoload_configs/cdr_pg_csv.conf.xml \
 		--exclude=etc/freeswitch/_example/autoload_configs/sangoma_codec.conf.xml
 	dh_link
 	dh_strip
