@@ -1,3 +1,9 @@
+freeswitch (1.0.6~201006051000-veliz1) unstable; urgency=low
+
+  * git branch 5 Jun 10:00 +0000
+
+ -- Vladimir Elizarov <me@vladimirelizarov.net>  Fri, 9 Apr 2010 00:10:11 +0400
+
 freeswitch (1.0.6~201004081000-veliz1) unstable; urgency=low
 
   * freeswitch 1.0.6!

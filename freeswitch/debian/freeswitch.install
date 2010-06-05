@@ -17,6 +17,11 @@ etc/freeswitch/_example/dialplan/default/00_pizza_demo.xml
 etc/freeswitch/_example/dialplan/default/01_example.com.xml
 etc/freeswitch/_example/dialplan/default/99999_enum.xml
 etc/freeswitch/_example/dialplan/public/00_inbound_did.xml
+etc/freeswitch/_example/dialplan/skinny-patterns.xml
+etc/freeswitch/_example/dialplan/skinny-patterns/20-Demo.xml
+etc/freeswitch/_example/dialplan/skinny-patterns/99-Default_Drop.xml
+etc/freeswitch/_example/dialplan/skinny-patterns/90-External.xml exists
+etc/freeswitch/_example/dialplan/skinny-patterns/20-Local_extension.xml
 etc/freeswitch/_example/sip_profiles/external.xml
 etc/freeswitch/_example/sip_profiles/internal/example.xml
 etc/freeswitch/_example/sip_profiles/internal.xml
@@ -78,7 +83,11 @@ etc/freeswitch/_example/autoload_configs/easyroute.conf.xml
 etc/freeswitch/_example/autoload_configs/memcache.conf.xml
 etc/freeswitch/_example/autoload_configs/unicall.conf.xml
 etc/freeswitch/_example/autoload_configs/python.conf.xml
-etc/freeswitch/_example/autoload_configs/cidlookup.conf.xml
 etc/freeswitch/_example/autoload_configs/nibblebill.conf.xml
 etc/freeswitch/_example/autoload_configs/tts_commandline.conf.xml
 etc/freeswitch/_example/ivr_menus/demo_ivr.xml
+etc/freeswitch/_example/autoload_configs/osp.conf.xml
+var/log/freeswitch
+var/log/freeswitch/xml_cdr
+var/lib/freeswitch/db
+var/run/freeswitch
