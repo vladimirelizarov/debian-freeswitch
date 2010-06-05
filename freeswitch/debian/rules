@@ -86,8 +86,8 @@ install: build
 	cp freeswitch/src/mod/endpoints/mod_skypopen/configs/skypopen.conf.xml $(CURDIR)/debian/tmp/etc/freeswitch/_example/autoload_configs/
 
 binary-indep:
-	#date +%Y%m%d%H%M
-	#dch -v 1.0.6-`date +%Y%m%d%H%M` auto inc
+	date +%Y%m%d%H%M
+	dch -v 1.0.6-`date +%Y%m%d%H%M` auto inc
 
 binary-arch: install
 	dh_testdir
