@@ -51,6 +51,7 @@ etc/freeswitch/_example/directory/default/1016.xml
 etc/freeswitch/_example/directory/default/1012.xml
 etc/freeswitch/_example/directory/default/example.com.xml
 etc/freeswitch/_example/directory/default.xml
+etc/freeswitch/_example/directory/default/skinny-example.xml
 etc/freeswitch/_example/freeswitch.xml
 etc/freeswitch/_example/extensions.conf
 etc/freeswitch/_example/autoload_configs/ivr.conf.xml
