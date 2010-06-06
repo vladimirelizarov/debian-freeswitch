@@ -88,6 +88,7 @@ etc/freeswitch/_example/autoload_configs/nibblebill.conf.xml
 etc/freeswitch/_example/autoload_configs/tts_commandline.conf.xml
 etc/freeswitch/_example/ivr_menus/demo_ivr.xml
 etc/freeswitch/_example/autoload_configs/osp.conf.xml
+etc/freeswitch/_example/autoload_configs/cidlookup.conf.xml
 var/log/freeswitch
 var/log/freeswitch/xml_cdr
 var/lib/freeswitch/db
