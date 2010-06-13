@@ -2,7 +2,7 @@ Source: freeswitch
 Maintainer: Denis Bezrodnykh <bdi@burnet.ru>
 Section: net
 Priority: extra
-Build-Depends: debhelper (>= 7.0.8), automake1.9, autoconf, libtool, unixodbc-dev, libasound2-dev, libcurl4-openssl-dev|libcurl3-openssl-dev, libssl-dev, ncurses-dev, libogg-dev, libvorbis-dev, libperl-dev, libgdbm-dev, libdb-dev, libgnutls-dev, libtiff4-dev, python, libmemcache-dev, memcached, libx11-dev, erlang-dev, quilt (>= 0.46-7)
+Build-Depends: debhelper (>= 7.0.8), automake1.9, autoconf, libtool, unixodbc-dev, libasound2-dev, libcurl4-openssl-dev|libcurl3-openssl-dev, libssl-dev, ncurses-dev, libogg-dev, libvorbis-dev, libperl-dev, libgdbm-dev, libdb-dev, libgnutls-dev, libtiff4-dev, python2.5, python2.5-dev, libmemcache-dev, memcached, libx11-dev, erlang-dev, quilt (>= 0.46-7)
 Standards-Version: 3.7.3
 
 Package: freeswitch
@@ -51,6 +51,16 @@ Package: libfreeswitch-perl
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: A perl engine for FreeSWITCH(TM)
+ FreeSWITCH is an open source telephony platform designed to facilitate the
+ creation of voice and chat driven products scaling from a soft-phone up to
+ a soft-switch.  It can be used as a simple switching engine, a media gateway
+ or a media server to host IVR applications using simple scripts or XML to
+ control the callflow.
+
+Package: libfreeswitch-python
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: A python engine for FreeSWITCH(TM)
  FreeSWITCH is an open source telephony platform designed to facilitate the
  creation of voice and chat driven products scaling from a soft-phone up to
  a soft-switch.  It can be used as a simple switching engine, a media gateway
