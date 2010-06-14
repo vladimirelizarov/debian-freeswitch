@@ -83,7 +83,6 @@ etc/freeswitch/_example/autoload_configs/acl.conf.xml
 etc/freeswitch/_example/autoload_configs/easyroute.conf.xml
 etc/freeswitch/_example/autoload_configs/memcache.conf.xml
 etc/freeswitch/_example/autoload_configs/unicall.conf.xml
-etc/freeswitch/_example/autoload_configs/python.conf.xml
 etc/freeswitch/_example/autoload_configs/nibblebill.conf.xml
 etc/freeswitch/_example/autoload_configs/tts_commandline.conf.xml
 etc/freeswitch/_example/ivr_menus/demo_ivr.xml
