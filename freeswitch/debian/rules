@@ -123,6 +123,8 @@ upstream-source: freeswitch freeswitch/libs/celt-0.7.1 freeswitch/libs/libbv16-0
 freeswitch:
 	git clone git://git.freeswitch.org/freeswitch.git freeswitch
 
+freeswitch/bootstrap.sh: freeswitch upstream-source
+
 freeswitch/libs/%:
 	wget -qO- http://files.freeswitch.org/downloads/libs/$(subst freeswitch/libs/,,$@).tar.gz | tar xzC freeswitch/libs
 
