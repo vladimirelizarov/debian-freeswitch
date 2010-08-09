@@ -48,7 +48,6 @@
 /etc/freeswitch/_example/autoload_configs/xml_curl.conf.xml
 /etc/freeswitch/_example/autoload_configs/enum.conf.xml
 /etc/freeswitch/_example/autoload_configs/logfile.conf.xml
-/etc/freeswitch/_example/autoload_configs/limit.conf.xml
 /etc/freeswitch/_example/autoload_configs/java.conf.xml
 /etc/freeswitch/_example/autoload_configs/sofia.conf.xml
 /etc/freeswitch/_example/autoload_configs/event_multicast.conf.xml
@@ -73,4 +72,7 @@
 /etc/freeswitch/_example/autoload_configs/cidlookup.conf.xml
 /etc/freeswitch/_example/autoload_configs/nibblebill.conf.xml
 /etc/freeswitch/_example/autoload_configs/tts_commandline.conf.xml
+/etc/freeswitch/_example/autoload_configs/redis.conf.xml
+/etc/freeswitch/_example/autoload_configs/db.conf.xml
+/etc/freeswitch/_example/autoload_configs/hash.conf.xml
 /etc/freeswitch/_example/ivr_menus/demo_ivr.xml

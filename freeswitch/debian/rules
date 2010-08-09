@@ -66,11 +66,12 @@ clean:
 	dh_testdir
 	dh_quilt_unpatch
 	dh_testroot
-	rm -f freeswitch/build-stamp
-	#-cd freeswitch && rm -f config.status */*/config.status */*/*/config.status
 	#-cd freeswitch && mv -f modules.conf~ modules.conf
 	-cd freeswitch && $(MAKE) DESTDIR=$(CURDIR)/debian/tmp update-clean
 	dh_clean
+	rm -f freeswitch/build-stamp
+	rm -f freeswitch/Makefile.in
+	-cd freeswitch && find -name config.status -delete
 
 install: build
 	dh_testdir
