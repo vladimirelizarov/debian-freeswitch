@@ -3,7 +3,6 @@ usr/lib/freeswitch/libfreeswitch.so.*
 usr/lib/freeswitch/modules/mod_cdr_csv.so
 usr/lib/freeswitch/modules/mod_console.so
 usr/lib/freeswitch/modules/mod_expr.so
-usr/lib/freeswitch/modules/mod_limit.so
 usr/lib/freeswitch/modules/mod_ilbc.so
 usr/lib/freeswitch/modules/mod_esf.so
 usr/lib/freeswitch/modules/mod_logfile.so
@@ -28,3 +27,4 @@ usr/lib/freeswitch/modules/mod_fsv.so
 usr/lib/freeswitch/modules/mod_tone_stream.so
 usr/lib/freeswitch/modules/mod_fax.so
 usr/lib/freeswitch/modules/mod_loopback.so
+usr/lib/freeswitch/modules/mod_hash.so
