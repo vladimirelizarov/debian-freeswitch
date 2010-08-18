@@ -99,10 +99,6 @@ binary-arch: install
 	dh_installinit
 	dh_install --fail-missing --sourcedir=debian/tmp \
 		--exclude=usr/perl/freeswitch \
-		--exclude=etc/freeswitch/_example/autoload_configs/opal.conf.xml \
-		--exclude=etc/freeswitch/_example/autoload_configs/cdr_pg_csv.conf.xml \
-		--exclude=etc/freeswitch/_example/autoload_configs/sangoma_codec.conf.xml \
-		--exclude=etc/freeswitch/_example/autoload_configs/spandsp.conf.xml \
 		--exclude=usr/htdocs/license.txt \
 		--exclude=usr/htdocs/slimtest.htm \
 		--exclude=usr/htdocs/slim.swf 
@@ -119,7 +115,9 @@ binary-arch: install
 
 binary: binary-indep binary-arch
 
-upstream-source: freeswitch freeswitch/libs/celt-0.7.1 freeswitch/libs/libbv16-0.1 freeswitch/libs/libbv32-0.1 freeswitch/libs/libmemcached-0.32 freeswitch/libs/libshout-2.2.2 freeswitch/libs/mpg123 freeswitch/libs/lame-3.97
+upstream-source: freeswitch freeswitch/libs/celt-0.7.1 freeswitch/libs/libbv16-0.1 freeswitch/libs/libbv32-0.1 \
+	freeswitch/libs/libmemcached-0.32 freeswitch/libs/libshout-2.2.2 freeswitch/libs/mpg123 \
+	freeswitch/libs/lame-3.97 freeswitch/libs/json-c-0.9
 
 freeswitch:
 	git clone git://git.freeswitch.org/freeswitch.git freeswitch
