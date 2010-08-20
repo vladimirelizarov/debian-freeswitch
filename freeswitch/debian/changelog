@@ -1,3 +1,15 @@
+freeswitch (1.0.6-201008210305) lucid; urgency=low
+
+  * auto inc
+
+ -- root <root@root>  Sat, 21 Aug 2010 03:05:54 +0400
+
+freeswitch (1.0.6-201008210242) lucid; urgency=low
+
+  * auto inc
+
+ -- root <root@root>  Sat, 21 Aug 2010 02:42:44 +0400
+
 freeswitch (1.0.6~201006051000-veliz1) unstable; urgency=low
 
   * git branch 5 Jun 10:00 +0000

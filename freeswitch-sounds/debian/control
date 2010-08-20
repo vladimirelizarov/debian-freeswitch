@@ -1,0 +1,147 @@
+Source: freeswitch-sounds-ru-ru-elena
+Maintainer: Vladimir Elizarov <me@vladimirelizarov.net>
+Section: net
+Priority: extra
+Build-Depends: debhelper (>= 5), fakeroot, sox
+Standards-Version: 3.7.3
+
+Package: freeswitch-sounds-ru-ru-elena-8000
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Russian language files for the FreeSWITCH(TM)
+ FreeSWITCH is an open source telephony platform designed to facilitate the
+ creation of voice and chat driven products scaling from a soft-phone up to
+ a soft-switch.  It can be used as a simple switching engine, a media gateway
+ or a media server to host IVR applications using simple scripts or XML to
+ control the callflow.
+ .
+ Russian language files for the FreeSWITCH(TM) (8000).
+
+Package: freeswitch-sounds-ru-ru-elena-16000
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Russian language files for the FreeSWITCH(TM)
+ FreeSWITCH is an open source telephony platform designed to facilitate the
+ creation of voice and chat driven products scaling from a soft-phone up to
+ a soft-switch.  It can be used as a simple switching engine, a media gateway
+ or a media server to host IVR applications using simple scripts or XML to
+ control the callflow.
+ .
+ Russian language files for the FreeSWITCH(TM) (16000).
+
+Package: freeswitch-sounds-ru-ru-elena-32000
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Russian language files for the FreeSWITCH(TM)
+ FreeSWITCH is an open source telephony platform designed to facilitate the
+ creation of voice and chat driven products scaling from a soft-phone up to
+ a soft-switch.  It can be used as a simple switching engine, a media gateway
+ or a media server to host IVR applications using simple scripts or XML to
+ control the callflow.
+ .
+ Russian language files for the FreeSWITCH(TM) (32000).
+
+Package: freeswitch-sounds-ru-ru-elena-48000
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Russian language files for the FreeSWITCH(TM)
+ FreeSWITCH is an open source telephony platform designed to facilitate the
+ creation of voice and chat driven products scaling from a soft-phone up to
+ a soft-switch.  It can be used as a simple switching engine, a media gateway
+ or a media server to host IVR applications using simple scripts or XML to
+ control the callflow.
+ .
+ Russian language files for the FreeSWITCH(TM) (48000).
+
+Source: freeswitch-sounds-en-us-callie
+Maintainer: Freeswitch Debian Team <debian@freeswitch.org>
+Section: net
+Priority: extra
+Build-Depends: debhelper (>= 5), fakeroot, sox
+Standards-Version: 3.7.3
+
+Package: freeswitch-sounds-en-us-callie-8000
+Architecture: all
+Conflicts: freeswitch-sounds-en-us-callie
+Description: English language sounds for the FreeSWITCH(TM) (8000)
+ FreeSWITCH is an open source telephony platform designed to facilitate the
+ creation of voice and chat driven products scaling from a soft-phone up to
+ a soft-switch.  It can be used as a simple switching engine, a media gateway
+ or a media server to host IVR applications using simple scripts or XML to
+ control the callflow.
+
+Package: freeswitch-sounds-en-us-callie-16000
+Architecture: all
+Conflicts: freeswitch-sounds-en-us-callie
+Description: English language sounds for the FreeSWITCH(TM) (16000)
+ FreeSWITCH is an open source telephony platform designed to facilitate the
+ creation of voice and chat driven products scaling from a soft-phone up to
+ a soft-switch.  It can be used as a simple switching engine, a media gateway
+ or a media server to host IVR applications using simple scripts or XML to
+ control the callflow.
+
+Package: freeswitch-sounds-en-us-callie-32000
+Architecture: all
+Conflicts: freeswitch-sounds-en-us-callie
+Description: English language sounds for FreeSWITCH(TM) (32000)
+ FreeSWITCH is an open source telephony platform designed to facilitate the
+ creation of voice and chat driven products scaling from a soft-phone up to
+ a soft-switch.  It can be used as a simple switching engine, a media gateway
+ or a media server to host IVR applications using simple scripts or XML to
+ control the callflow.
+
+Package: freeswitch-sounds-en-us-callie-48000
+Architecture: all
+Description: English language sounds for the FreeSWITCH(TM) (48000)
+ FreeSWITCH is an open source telephony platform designed to facilitate the
+ creation of voice and chat driven products scaling from a soft-phone up to
+ a soft-switch.  It can be used as a simple switching engine, a media gateway
+ or a media server to host IVR applications using simple scripts or XML to
+ control the callflow.
+
+Source: freeswitch-sounds-music
+Maintainer: Freeswitch Debian Team <debian@freeswitch.org>
+Section: net
+Priority: extra
+Build-Depends: debhelper (>= 5), fakeroot, sox
+Standards-Version: 3.7.3
+
+Package: freeswitch-sounds-music-8000
+Architecture: all
+Conflicts: freeswitch-sounds-music
+Description: music for FreeSWITCH(TM) (8000)
+ FreeSWITCH is an open source telephony platform designed to facilitate the
+ creation of voice and chat driven products scaling from a soft-phone up to
+ a soft-switch.  It can be used as a simple switching engine, a media gateway
+ or a media server to host IVR applications using simple scripts or XML to
+ control the callflow.
+
+Package: freeswitch-sounds-music-16000
+Architecture: all
+Conflicts: freeswitch-sounds-music
+Description: music for FreeSWITCH(TM) (16000)
+ FreeSWITCH is an open source telephony platform designed to facilitate the
+ creation of voice and chat driven products scaling from a soft-phone up to
+ a soft-switch.  It can be used as a simple switching engine, a media gateway
+ or a media server to host IVR applications using simple scripts or XML to
+ control the callflow.
+
+Package: freeswitch-sounds-music-32000
+Architecture: all
+Conflicts: freeswitch-sounds-music
+Description: music for FreeSWITCH(TM) (32000)
+ FreeSWITCH is an open source telephony platform designed to facilitate the
+ creation of voice and chat driven products scaling from a soft-phone up to
+ a soft-switch.  It can be used as a simple switching engine, a media gateway
+ or a media server to host IVR applications using simple scripts or XML to
+ control the callflow.
+
+Package: freeswitch-sounds-music-48000
+Architecture: all
+Description: music for FreeSWITCH(TM) (48000)
+ FreeSWITCH is an open source telephony platform designed to facilitate the
+ creation of voice and chat driven products scaling from a soft-phone up to
+ a soft-switch.  It can be used as a simple switching engine, a media gateway
+ or a media server to host IVR applications using simple scripts or XML to
+ control the callflow.
+
