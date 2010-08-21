@@ -75,5 +75,4 @@
 /etc/freeswitch/_example/autoload_configs/redis.conf.xml
 /etc/freeswitch/_example/autoload_configs/db.conf.xml
 /etc/freeswitch/_example/autoload_configs/hash.conf.xml
-/etc/freeswitch/_example/autoload_configs/callcenter.conf.xml
 /etc/freeswitch/_example/ivr_menus/demo_ivr.xml
