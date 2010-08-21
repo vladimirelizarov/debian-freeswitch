@@ -28,3 +28,4 @@ usr/lib/freeswitch/modules/mod_tone_stream.so
 usr/lib/freeswitch/modules/mod_fax.so
 usr/lib/freeswitch/modules/mod_loopback.so
 usr/lib/freeswitch/modules/mod_hash.so
+usr/lib/freeswitch/modules/mod_db.so

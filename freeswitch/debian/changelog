@@ -1,3 +1,10 @@
+freeswitch (1.0.7-201008211000) unstable; urgency=low
+
+  * auto inc
+
+ -- root <root@root>  Sat, 21 Aug 2010 10:00:45 +0400
+
+
 freeswitch (1.0.6-201008210305) lucid; urgency=low
 
   * auto inc
