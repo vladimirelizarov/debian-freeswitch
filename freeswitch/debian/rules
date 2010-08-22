@@ -103,6 +103,7 @@ binary-arch: install
 		--exclude=usr/perl/freeswitch \
 		--exclude=usr/htdocs/license.txt \
 		--exclude=usr/htdocs/slimtest.htm \
+		--exclude=etc/freeswitch/_example/autoload_configs/callcenter.conf \
 		--exclude=usr/htdocs/slim.swf 
 	dh_link
 	dh_strip
